@@ -1,0 +1,107 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Set the container size for social media posts */
+.ad-container {
+    background-color: hsl(0, 33%, 3%);;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 1080px; /* Square layout */
+    height: 1080px; /* For a square layout */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content */
+}
+
+/* For vertical layout */
+@media screen and (min-width: 1350px) {
+    .ad-container {
+        height: 1350px; /* For a vertical layout */
+    }
+}
+
+/* Adjust text size for small screens */
+.content h1 {
+    font-size: 36px; /* Larger font for legibility */
+    color: #f3eded;
+    margin-bottom: 20px;
+    
+}
+
+.services {
+    list-style-type: none;
+    margin-bottom: 30px;
+     
+}
+
+.services li {
+    font-size: 24px; /* Bigger font for mobile readability */
+    color:#e66767;
+    margin: 30px 0;
+}
+
+.cta-button {
+    font-size: 24px; /* Larger button text for easy touch interaction */
+    padding: 20px 40px;
+    background-color: #da2d2d; 
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+/* Make everything responsive */
+@media screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 28px; /* Adjust headline font for smaller screens */
+       color: #f3eded;
+    }
+
+    .services li {
+        font-size: 20px; /* Adjust list items for small devices */
+        color: #e66767;
+    }
+
+    .cta-button {
+         color: #ffffff;
+         padding: 15px 30px;
+         border: none;
+         border-radius: 20px;
+         font-size: 20px; /* Larger button text for easy touch interaction */
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+    }
+}
+
+footer {
+    margin: 10px;
+    color: #777777;
+    font-size: 14px;
+}
+
+.logo {
+    margin: auto;
+     
+}
+
+.cta-button:hover {
+    background-color: #decd4e;  
+}
+
+
